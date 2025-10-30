@@ -11,7 +11,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem
   const popup = open("about:blank", "_blank");
   setTimeout(() => {
     if (!popup || popup.closed) {
-      alert("I fixed the search problems! (Optional) Please allow popups for this site as it blocks extensions and won't show up in history. Last updated 10/30/25");
+      alert("I fixed the search problems! (Optional): Please allow popups for this site as it blocks extensions and won't show up in history. Last updated: 10/30/25");
     } else {
       const doc = popup.document;
       const iframe = doc.createElement("iframe");
