@@ -11,7 +11,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem
   const popup = open("about:blank", "_blank");
   setTimeout(() => {
     if (!popup || popup.closed) {
-      alert("Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.");
+      alert("Site has been updated as of 10/30/25! (Optional) Please allow popups for this site! It blocks certain extensions and won't show up in history.");
     } else {
       const doc = popup.document;
       const iframe = doc.createElement("iframe");
@@ -167,16 +167,13 @@ document.addEventListener("DOMContentLoaded", event => {
 });
 // Splash texts
 const SplashT = [
-  "Over 8 Million Users since 2023",
-  "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
-  "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
-  "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
+  "Hello everyone, this is Daniel Larson.",
+  "I know you're a furry, Ezra.",
+  "nobody reads these :(",
+  "i loooveeee chocolate",
+  "I just roke up",
+  "Anyone wanna play 8 ball pool?",
+  "Copsey is always watching.",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -193,19 +190,13 @@ SplashE.addEventListener("click", US);
 // Random URL
 function getRandomUrl() {
   const randomUrls = [
-    "https://kahoot.it",
     "https://classroom.google.com",
     "https://drive.google.com",
     "https://google.com",
     "https://docs.google.com",
     "https://slides.google.com",
-    "https://www.nasa.gov",
-    "https://blooket.com",
     "https://clever.com",
-    "https://edpuzzle.com",
-    "https://khanacademy.org",
     "https://wikipedia.org",
-    "https://dictionary.com",
   ];
   return randomUrls[randRange(0, randomUrls.length)];
 }
