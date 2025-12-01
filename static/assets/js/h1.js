@@ -11,7 +11,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox") && localStorage.getItem
   const popup = open("about:blank", "_blank");
   setTimeout(() => {
     if (!popup || popup.closed) {
-      alert("I fixed the search problems! (Optional): Please allow popups for this site as it blocks extensions and won't show up in history. Last updated: 10/30/25");
+      alert("I fixed the search problems! (Optional): Please allow popups for this site as it blocks extensions and won't show up in history. Last updated: 12/1/25");
     } else {
       const doc = popup.document;
       const iframe = doc.createElement("iframe");
@@ -174,6 +174,13 @@ const SplashT = [
   "I just roke up",
   "Anyone wanna play 8 ball pool?",
   "Copsey is always watching.",
+  "Alexa, start making my popcorn",
+  "Dad, why isn't my popcorn machine connecting to the internet?",
+  "kopsey with a k",
+  "Xbox sign out",
+  "Did you refill your popcorn machine?",
+  "Download games for your popcorn machine at kopseyspopcornmachine.online!",
+  "We ran out of butter.",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
